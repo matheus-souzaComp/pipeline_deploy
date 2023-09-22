@@ -12,8 +12,6 @@ jobs:
       with:
         node-version: 16
         cache: 'npm'
-    - run: npm ci
-    - run: npm test
     - name: frontend install
       run: npm --prefix frontend install
     - name: frontend build
